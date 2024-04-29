@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import logo from "../../public/Group.png";
 import text from "../../public/SGE.png";
 import { IoMenu } from "react-icons/io5";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaArrowRight } from "react-icons/fa";
 
 export default function Header() {
   const dropDownMenuData = {
@@ -21,8 +21,7 @@ export default function Header() {
   };
 
   const formatMenuKey = (menuKey) => {
-    // Replace camel case with spaces
-    return menuKey.replace(/([a-z])([A-Z])/g, '$1 $2');
+    return menuKey.replace(/([a-z])([A-Z])/g, "$1 $2");
   };
 
   const handleMenuEnter = (menu) => {
@@ -36,7 +35,7 @@ export default function Header() {
   return (
     <div className="bg-gradient-to-br from-[#e4f2fc] to-[#F0F8FF]">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between py-5 px-4 md:px-6 lg:px-8">
-        <div className="flex items-center gap-1 ">
+        <div className="flex items-center gap-1 mr-auto">
           <img
             className="lg:w-12 md:w-12 w-8"
             src={logo}
@@ -97,15 +96,15 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden md:block">
-          <ul className="flex items-center justify-end gap-8 text-slate-900 dark:text-gray-100 lg:gap-12">
+          <ul className="flex items-center justify-end dark:text-gray-100 lg:gap-8 ">
             {Object.keys(dropDownMenuRefs).map((menuKey) => (
               <li
                 key={menuKey}
-                className="relative text-lg font-semibold items-center"
+                className="relative text-base roboto-bold font-semibold items-center"
                 ref={dropDownMenuRefs[menuKey]}
                 onMouseEnter={() => handleMenuEnter(menuKey)}
               >
-                <button className="relative flex items-center gap-2 py-2 px-4">
+                <button className="relative flex items-center gap-1 py-2">
                   {formatMenuKey(menuKey)}
                   <FaAngleDown className="text-sm items-center" />
                 </button>
@@ -119,7 +118,11 @@ export default function Header() {
                   onMouseLeave={() => handleMenuLeave(menuKey)}
                 >
                   {dropDownMenuData[menuKey].map((option, index) => (
-                    <li onMouseLeave={() => handleMenuLeave(menuKey)} key={index} className="px-3">
+                    <li
+                      onMouseLeave={() => handleMenuLeave(menuKey)}
+                      key={index}
+                      className="px-3 font-normal"
+                    >
                       <p>{option}</p>
                     </li>
                   ))}
@@ -127,7 +130,14 @@ export default function Header() {
               </li>
             ))}
             <li>
-              <button className="bg-[#93C5FD] px-4 py-2 rounded-lg text-base font-semibold text-white">login</button>
+              <div className="group relative">
+                <button className="bg-[#93C5FD] hover:bg-[#004AC8] px-4 hover:pr-4 hover:px-0 transform duration-300 py-2 rounded-lg text-base font-semibold text-white relative z-10 w-24">
+                  Login
+                  <span className="absolute right-9 top-0 bottom-0 flex items-center justify-center w-8 transition-all duration-300 transform translate-x-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-full">
+                    <FaArrowRight />
+                  </span>
+                </button>
+              </div>
             </li>
           </ul>
         </div>
