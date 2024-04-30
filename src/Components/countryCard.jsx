@@ -1,4 +1,4 @@
-export default function countryCard() {
+export default function CountryCard() {
   return (
     <div>
       <div className="bg-sky-700 rounded-2xl shadow-sm shadow-sky-500 w-56 h-80 ">
