@@ -33,7 +33,7 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#e4f2fc] to-[#F0F8FF]">
+    <div className="bg-gradient-to-br from-[#e4f2fc] to-[#F0F8FF]" onMouseLeave={handleMenuLeave}>
       <div className="max-w-screen-xl mx-auto flex items-center justify-between py-5 px-4 md:px-6 lg:px-8">
         <div className="flex items-center gap-1 mr-auto">
           <img
@@ -43,7 +43,7 @@ export default function Header() {
           />
 
           <div>
-            <img className="pt-2 lg:w-56 md:w-12 w-36" src={text} alt="" />
+            <img className="pt-2 lg:w-56 md:w-56 w-36" src={text} alt="" />
 
             <p className="lg:text-xs md:text-xs text-[8px] text-center text-[#333333] font-medium">
               Worldwide University Admission
@@ -96,7 +96,7 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden md:block">
-          <ul className="flex items-center justify-end dark:text-gray-100 lg:gap-8 ">
+          <ul className="flex items-center justify-end dark:text-gray-100 lg:gap-8 md:gap-5 ">
             {Object.keys(dropDownMenuRefs).map((menuKey) => (
               <li
                 key={menuKey}
@@ -119,7 +119,6 @@ export default function Header() {
                 >
                   {dropDownMenuData[menuKey].map((option, index) => (
                     <li
-                      onMouseLeave={() => handleMenuLeave(menuKey)}
                       key={index}
                       className="px-3 font-normal"
                     >
