@@ -7,7 +7,7 @@ export default function Banner() {
   const [isHovered, setIsHovered] = useState(true);
   return (
     <div
-      className="lg:h-[650px] md:h-[650px] h-[520px] bg-cover bg-right rounded-3xl"
+      className="lg:h-[650px] md:h-[650px] h-[520px] bg-cover bg-right lg:rounded-3xl md:rounded-3xl rounded-none"
       style={{ backgroundImage: `url(${banner})` }}
     >
       <div className="w-full h-full lg:bg-transparent md:bg-transparent bg-white bg-opacity-25">

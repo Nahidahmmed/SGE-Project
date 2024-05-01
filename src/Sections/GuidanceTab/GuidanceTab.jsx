@@ -14,14 +14,16 @@ export default function GuidanceTab() {
         "Get complete guidance in your study abroad journey- from start to finish",
       text: "Shabuj Global Education helps you with Course & University Selection, Interview and Test Preparation, Visa Application and Admission and more- so you can join your dream university with ease!",
       image: `${student}`,
+      button: 'Start Now'
     },
     {
       id: 2,
       name: "For Partners",
-      image: `${partners}`,
       title:
-        "Wow your students with Shabuj Global Education's trusted admission process",
+      "Wow your students with Shabuj Global Education's trusted admission process",
       text: "No more lack of trust and transparency- we treat your business our own. With SGE's 1500+ strong university network, expericnced counsellors, and dedicated customer support, you can just focus on increasing your student reach- and leave the processing part to us!",
+      image: `${partners}`,
+      button: 'Explore More'
     },
   ];
 
@@ -30,11 +32,11 @@ export default function GuidanceTab() {
     setActiveTab(tabId);
   };
   return (
-    <div className="bg-[#EFF6FF] rounded-3xl pt-40">
-      <div className="max-w-screen-xl mx-auto ">
+    <div className="bg-[#EFF6FF] rounded-3xl lg:pt-40 md:pt-40 pt-0">
+      <div className="max-w-screen-xl mx-auto">
         <div>
           {/* Tab buttons */}
-          <div className="flex justify-between mb-4 bg-[#EEEEEE] w-[65%] text-2xl font-bold mx-auto rounded-full ">
+          <div className="lg:flex md:flex hidden justify-between mb-4 bg-[#EEEEEE] w-[65%] text-2xl font-bold mx-auto rounded-full ">
             {tabsData.map((tab) => (
               <button
                 key={tab.id}
@@ -51,7 +53,7 @@ export default function GuidanceTab() {
           </div>
 
           {/* Tab content */}
-          <div className="">
+          <div className="lg:block md:block hidden">
             {tabsData.map((tab) => (
               <div
                 key={tab.id}
@@ -59,16 +61,49 @@ export default function GuidanceTab() {
               >
                 <div className="flex items-center mt-10 pb-36">
                   <div className="space-y-6">
-                    <p className="text-[#3560FF] text-3xl font-bold">{tab.name}</p>
-                    <p className="text-5xl font-semibold w-[75%] leading-[55px]">{tab.title}</p>
+                    <p className="text-[#3560FF] text-3xl font-bold">
+                      {tab.name}
+                    </p>
+                    <p className="text-5xl font-semibold w-[75%] leading-[55px]">
+                      {tab.title}
+                    </p>
                     <p className="text-[#1F1F1F] text-lg w-[60%]">{tab.text}</p>
-                    <button className="bg-[#2563EB] text-2xl text-white font-light px-16 py-2 rounded-full hover:opacity-85">Start Now</button>
+                    <button className="bg-[#2563EB] text-2xl text-white font-light px-16 py-2 rounded-full hover:opacity-85">
+                      {tab.button}
+                    </button>
                   </div>
                   <img className="w-[800px]" src={tab.image} alt="" />
                 </div>
               </div>
             ))}
           </div>
+        </div>
+        {/* mobile */}
+        <div className="lg:hidden md:hidden block">
+          {tabsData.map((tab, index) => (
+            <div
+              key={tab.id}
+              className={` ${index === 0 ? "bg-[#e5f0ff]" : "bg-[#FFFCFC]"}`}
+            >
+              <div className="pb-10">
+                <div className="space-y-6">
+                  <p className="text-[#3560FF] text-xl font-bold text-center py-8">
+                    {tab.name}
+                  </p>
+                  <img className="w-[200px] mx-auto" src={tab.image} alt="" />
+                  <p className="text-2xl font-bold leading-[35px] mx-5 pt-3">
+                    {tab.title}
+                  </p>
+                  <p className="text-[#1F1F1F] text-[15px] mx-5 ">{tab.text}</p>
+                  <div className="flex justify-center items-center">
+                    <button className={` ${index === 0 ? "bg-[#2563EB] text-xl text-white font-light px-16 py-1 rounded-full hover:opacity-85" : "bg-[#2563EB] text-xl text-white font-light px-14 py-1 rounded-full hover:opacity-85"}`}>
+                    {tab.button}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
