@@ -4,7 +4,6 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Arrow from "../../Components/Arrow";
 
 export default function Banner() {
-  //   const [isHovered, setIsHovered] = useState(false);
   const [isHovered, setIsHovered] = useState(true);
   return (
     <div
@@ -22,7 +21,7 @@ export default function Banner() {
           </p>
           {/*  */}
           <div className="lg:w-[367px]  md:w-[367px] w-[60%] lg:mx-0 md:mx-0 mx-auto bg-white bg-opacity-50 backdrop-blur-[3px] lg:py-2 md:py-2 py-[5px] lg:px-4 md:px-4 px-[10px] border-white lg:border-2 md:border-2 border-[1px] rounded-full overflow-hidden mt-20 items-center">
-            <div className="flex lg:text-2xl md:text-2xl text-base text-white">
+            <div className="flex lg:text-2xl md:text-2xl text-base text-white" >
               <button
                 className={`flex-1 mr-2 rounded-full flex items-center justify-center transition-all duration-300 transform ${
                   isHovered ? "scale-110 " : "scale-100 hover:scale-105"
@@ -55,7 +54,6 @@ export default function Banner() {
               </button>
             </div>
           </div>
-          {/*  */}
         </div>
       </div>
       <Arrow />
