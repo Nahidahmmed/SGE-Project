@@ -59,7 +59,7 @@ export default function GuidanceTab() {
                 key={tab.id}
                 className={`${activeTab === tab.id ? "" : "hidden"}`}
               >
-                <div className="flex items-center mt-10 pb-36">
+                <div className="flex items-center mt-20 pb-36">
                   <div className="space-y-6">
                     <p className="text-[#3560FF] text-3xl font-bold">
                       {tab.name}
@@ -72,7 +72,7 @@ export default function GuidanceTab() {
                       {tab.button}
                     </button>
                   </div>
-                  <img className="w-[800px]" src={tab.image} alt="" />
+                  <img className="w-[450px]" src={tab.image} alt="" />
                 </div>
               </div>
             ))}

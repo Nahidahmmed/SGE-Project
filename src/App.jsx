@@ -1,5 +1,6 @@
 
 import './App.css'
+import CoreStrength from './Sections/CoreStrength/CoreStrength'
 
 import Footer from './Sections/Footer'
 import GuidanceTab from './Sections/GuidanceTab/GuidanceTab'
@@ -14,6 +15,7 @@ function App() {
     <Header/>
     <Banner/>
     <GuidanceTab/>
+    <CoreStrength/>
      <Footer/>
     </div>
   )
