@@ -15,12 +15,12 @@ export default function CountdownTimer() {
       onExit={() => setCounterOn(false)}
     >
       <div>
-        <p className="text-7xl font-bold text-right mr-20 pt-28 mb-24 bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent">
+        <p className="lg:text-7xl md:text-7xl text-5xl font-bold lg:text-right md:text-right text-center lg:mr-20 md:mr-20 mr-0 lg:pt-28 md:pt-28 -top-96 relative  mb-48 bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent">
           Our Core Strength
         </p>
         <h1>
           {counterOn && (
-            <div className="flex gap-10 w-[95%] mx-auto">
+            <div className="grid lg:grid-cols-6 md:grid-cols-6 grid-cols-2 gap-8 w-[95%] mx-auto">
               <div className="text-center space-y-3">
                 <img className="mx-auto w-16 pb-2" src={world} alt="" />
                 <CountUp className="text-5xl font-bold" start={0} end={16} duration={2} delay={0} />

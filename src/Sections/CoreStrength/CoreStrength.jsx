@@ -4,18 +4,10 @@ import CountdownTimer from "../../Components/CountdownTimer";
 
 export default function CoreStrength() {
   return (
-    <div className="w-full mx-auto relative flex justify-center items-center">
-      <div className="absolute max-w-screen-xl w-[1150px] h-[500px] bg-gradient-to-r from-[#3187FC] to-[#0522E6] mt-10 flex justify-center items-center rounded-[70px]">
-        <img className="absolute left-2 bottom-7" src={cuate} alt="" />
-        <div
-  className="w-full h-[500px] absolute rounded-[70px]"
-  style={{
-    backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, transparent 80%)',
-    '@media (max-width: 639px)': {
-      backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 20%, transparent 80%)', // Set gradient to transparent on screens smaller than 640px
-    },
-  }}
->
+    <div className="w-full mx-auto flex justify-center ">
+      <div className="absolute max-w-screen-xl lg:w-[1150px] md:w-[1150px] w-full lg:h-[500px] md:h-[500px] h-[160%] bg-gradient-to-r from-[#3187FC] to-[#0522E6] mt-10 flex justify-center items-center rounded-[70px]">
+        <img className="relative lg:left-2 md:left-2 lg:bottom-7 md:bottom-7 -top-64 lg:w-auto md:w-auto w-full" src={cuate} alt="" />
+        <div className="lg:bg-gradient-to-t md:bg-gradient-to-t from-[#061b3f] to-transparent bg-transparent w-full h-[500px] absolute rounded-[70px]">
           <div className="text-white">
             <CountdownTimer />
           </div>
