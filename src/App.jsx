@@ -6,6 +6,7 @@ import GuidanceTab from "./Sections/GuidanceTab/GuidanceTab";
 import Header from "./Sections/Header";
 import Banner from "./Sections/HomeSections/Banner";
 import LatestNews from "./Sections/LatestNews/LatestNews";
+import { Reviews } from "./Sections/Reviews/Reviews";
 
 function App() {
   return ( 
@@ -15,6 +16,7 @@ function App() {
       <GuidanceTab />
       <CoreStrength />
       <LatestNews/>
+      <Reviews/>
       <Footer />
     </div>
   );
