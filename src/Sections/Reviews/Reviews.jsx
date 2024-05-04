@@ -4,27 +4,27 @@ export const Reviews = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const sliders = [
     {
-      img: "https://source.unsplash.com/1200x540/?nature",
+      img: "https://i.ibb.co/C8cyrbh/naima.png",
       title: "Escape 1",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x540/?hill",
+      img: "https://i.ibb.co/XzYcyBg/jakaria.png",
       title: "Escape 2",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x540/?mountain",
+      img: "https://i.ibb.co/C8cyrbh/naima.png",
       title: "Escape 3",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x540/?river",
+      img: "https://i.ibb.co/XzYcyBg/jakaria.png",
       title: "Escape 4",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x540/?sea",
+      img: "https://i.ibb.co/C8cyrbh/naima.png",
       title: "Escape 5",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
@@ -97,11 +97,11 @@ export const Reviews = () => {
         </button>
       </div>
       {/* text container here */}
-      <div className="w-1/2 px-4 left-0 absolute drop-shadow-lg text-white rounded-lg">
+      <div className="w-[40%] px-4 left-0 absolute drop-shadow-lg text-white rounded-lg">
         <h1 className="lg:text-3xl mb-3 bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent">Become a Part of Our Success Stories</h1>
       </div>
       {/* slider container */}
-      <div className="w-1/2 ml-auto overflow-hidden  absolute -right-5 lg:-right-16 z-50 px-4 py-10">
+      <div className="w-[100%] ml-auto overflow-hidden  absolute -right-[1100px]  px-4 py-10">
         <div
           className="ease-linear duration-300 flex gap-4 items-center"
           style={{
