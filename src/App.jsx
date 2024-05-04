@@ -9,6 +9,7 @@ import Header from "./Sections/Header";
 import Banner from "./Sections/HomeSections/Banner";
 import LatestNews from "./Sections/LatestNews/LatestNews";
 import { Reviews } from "./Sections/Reviews/Reviews";
+import Universities from "./Sections/Universities/Universities";
 
 function App() {
   return ( 
@@ -21,6 +22,7 @@ function App() {
       {/* <Reviews/> */}
       <ConnectUs/>
       <Destination/>
+      <Universities/>
       <Footer />
     </div>
   );

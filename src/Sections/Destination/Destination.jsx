@@ -13,7 +13,7 @@ export default function Destination() {
     >
       <div className="max-w-screen-xl mx-auto relative">
         <img
-          className="absolute w-[240px] right-0 -top-20"
+          className="absolute w-[240px] right-0 -top-20 lg:block md:block hidden"
           src="https://i.ibb.co/27Nwnrq/plane.png"
           alt=""
         />
@@ -22,15 +22,15 @@ export default function Destination() {
           src="https://i.ibb.co/HGtGDcP/Fligh-Path.png"
           alt=""
         />
-        <div className="text-center py-36">
-          <p className="bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent text-6xl font-bold">
+        <div className="text-center lg:py-36 md:py-36 py-16">
+          <p className="bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent lg:text-6xl md:text-6xl text-3xl font-bold lg:w-full md:w-full w-[80%] mx-auto">
             Choose Your Destination
           </p>
-          <p className="text-white text-[76px] font-bold pt-8">
+          <p className="text-white lg:text-[76px] md:text-[76px] text-5xl font-bold lg:pt-8 md:pt-8 pt-5">
             We’ll Plan the Rest
           </p>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-16 gap-10">
           {countrys.map((country, index) => (
             <div key={index} className="mx-auto">
               <FlagCard image={country.image} name={country.name} />
