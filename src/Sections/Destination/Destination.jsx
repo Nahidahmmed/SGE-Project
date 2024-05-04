@@ -1,4 +1,5 @@
-import CountryCard from "../../Components/CountryCard";
+
+import FlagCard from "../../Components/FlagCard";
 export default function Destination() {
   return (
     <div
@@ -32,7 +33,7 @@ export default function Destination() {
         <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-16">
           {countrys.map((country, index) => (
             <div key={index} className="mx-auto">
-              <CountryCard image={country.image} name={country.name} />
+              <FlagCard image={country.image} name={country.name} />
             </div>
           ))}
         </div>
