@@ -22,15 +22,26 @@ export default function Destination() {
           alt=""
         />
         <div className="text-center py-36">
-          <p className="bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent text-6xl font-bold">Choose Your Destination</p>
-          <p className="text-white text-[76px] font-bold pt-8">We’ll Plan the Rest</p>
+          <p className="bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent text-6xl font-bold">
+            Choose Your Destination
+          </p>
+          <p className="text-white text-[76px] font-bold pt-8">
+            We’ll Plan the Rest
+          </p>
         </div>
-        <div className="grid grid-cols-3 gap-11">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-16">
           {countrys.map((country, index) => (
             <div key={index} className="mx-auto">
               <CountryCard image={country.image} name={country.name} />
             </div>
           ))}
+        </div>
+        <div>
+          <div className="col-span-3 flex justify-center my-20">
+            <button className="text-center bg-white text-3xl px-20 py-2 rounded-full hover:bg-[#ffffff83]">
+              Explore More
+            </button>
+          </div>
         </div>
       </div>
     </div>
