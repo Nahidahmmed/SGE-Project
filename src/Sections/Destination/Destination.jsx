@@ -37,8 +37,8 @@ export default function Destination() {
           ))}
         </div>
         <div>
-          <div className="col-span-3 flex justify-center my-20">
-            <button className="text-center bg-white text-3xl px-20 py-2 rounded-full hover:bg-[#ffffff83]">
+          <div className="col-span-3 flex justify-center my-24">
+            <button className="text-center bg-white text-3xl px-20 py-1 rounded-full hover:bg-[#ffffff83]">
               Explore More
             </button>
           </div>
