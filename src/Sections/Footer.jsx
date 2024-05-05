@@ -8,9 +8,9 @@ import { FaYoutubeSquare } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div>
-      <img className="w-full" src={Footer_Head} alt="" />
-      <div className="bg-[#081831] relative  flex justify-center ">
+    <div className="relative">
+      <img className="w-full absolute lg:-top-[61px] md:-top-[30px] -top-[0.5%]" src={Footer_Head} alt="" />
+      <div className="bg-[#081831] relative  flex justify-center lg:h-auto md:h-auto h-[2200px]">
         <div className="absolute text-white flex flex-col lg:-top-5 md:-top-5 -top-0  max-w-screen-xl mx-auto w-full">
           <p className="lg:text-3xl md:text-3xl text-xl lg:font-bold md:font-bold font-light text-center">
             Our Students are Our Reference
@@ -129,7 +129,7 @@ export default function Footer() {
           </div>
         </div>
         <img
-          className="w-full lg:pt-[35%] md:pt-[30%] pt-[575%]"
+          className="w-full lg:block md:block hidden lg:pt-[35%] md:pt-[90%] pt-0"
           src={city}
           alt=""
         />

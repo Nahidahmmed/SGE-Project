@@ -4,6 +4,7 @@ import CoreStrength from "./Sections/CoreStrength/CoreStrength";
 import Destination from "./Sections/Destination/Destination";
 
 import Footer from "./Sections/Footer";
+import Form from "./Sections/Form/Form";
 import GuidanceTab from "./Sections/GuidanceTab/GuidanceTab";
 import Header from "./Sections/Header";
 import Banner from "./Sections/HomeSections/Banner";
@@ -23,6 +24,7 @@ function App() {
       <ConnectUs/>
       <Destination/>
       <Universities/>
+      <Form/>
       <Footer />
     </div>
   );
