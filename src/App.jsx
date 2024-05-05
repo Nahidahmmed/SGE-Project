@@ -20,7 +20,7 @@ function App() {
       <GuidanceTab />
       <CoreStrength />
       <LatestNews/>
-      {/* <Reviews/> */}
+      <Reviews/>
       <ConnectUs/>
       <Destination/>
       <Universities/>
