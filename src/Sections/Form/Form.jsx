@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import FormAnimetion from "../../Components/FormAnimetion";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -21,17 +22,17 @@ export default function Form() {
   };
   return (
     <div className="w-full bg-[#E7E7E7]">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="pt-[10%] text-center">
+      <div className="max-w-screen-xl mx-auto relative">
+        <div className="pt-[10%] text-center lg:mx-0 md:mx-0 mx-2">
           <p className="font-bold text-4xl">
             It’s Time to Start Your Journey With Us
           </p>
-          <p className="text-[#1F1F1F] text-lg">
-            Book Your <span>FREE</span> Consultation with Certified Counsellors
+          <p className="text-[#1F1F1F] text-xl lg:mt-20 md:mt-20 mt-10">
+            Book Your <span className="bg-[#88F3D0] rounded-sm px-1 font-medium">FREE</span> Consultation with Certified Counsellors
           </p>
         </div>
-        <div className="max-w-xl mx-auto mt-8">
-          <form className="space-y-6">
+        <div className="max-w-xl lg:mx-auto md:mx-auto mt-8 mx-5">
+          <form className="space-y-6 pb-20">
             <input
               type="text"
               id="name"
@@ -128,16 +129,23 @@ export default function Form() {
                 <IoIosArrowDown  className=" text-xl text-[#8E8E8E]" />
               </div>
             </div>
-            <div>
+            <div className="flex items-center space-x-3">
+            <input type="checkbox" />
+            <p className="text-[#4B4B4B] font-medium">By clicking you agree to our <span className="text-[#008AFF] cursor-pointer">Privacy Policy</span> and<span className="text-[#008AFF] cursor-pointer"> Terms & Conditions</span> *</p>
+            </div>
+            <div className="mx-auto flex justify-center">
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600"
+                className=" bg-blue-500 text-white rounded-full py-2 lg:px-36 md:px-36 px-20 hover:bg-blue-600 mt-16 lg:mb-32 md:mb-32 mb-0"
               >
-                Submit
+                Book Free Counselling
               </button>
             </div>
           </form>
         </div>
+      <div className="absolute top-[300px] right-10 lg:block md:block hidden">
+      <FormAnimetion/>
+      </div>
       </div>
     </div>
   );
