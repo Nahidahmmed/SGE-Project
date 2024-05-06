@@ -3,7 +3,7 @@ import FlagCard from "../../Components/FlagCard";
 export default function Destination() {
   return (
     <div
-      className="w-full h-[1440px]"
+      className="w-full h-[100%]"
       style={{
         background: "rgb(50,137,252)",
         // eslint-disable-next-line no-dupe-keys
@@ -30,16 +30,16 @@ export default function Destination() {
             We’ll Plan the Rest
           </p>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-16 gap-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-16">
           {countrys.map((country, index) => (
-            <div key={index} className="mx-auto">
+            <div key={index} className="mx-auto lg:mb-0 md:mb-0 mb-10">
               <FlagCard image={country.image} name={country.name} />
             </div>
           ))}
         </div>
         <div>
           <div className="col-span-3 flex justify-center my-24">
-            <button className="text-center bg-white text-3xl px-20 py-1 rounded-full hover:bg-[#ffffff83]">
+            <button className="text-center bg-white text-3xl px-20 py-1 rounded-full hover:bg-[#ffffff83] mb-20">
               Explore More
             </button>
           </div>

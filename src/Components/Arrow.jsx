@@ -1,7 +1,7 @@
 import { HiOutlineArrowDown } from "react-icons/hi";
 
 const Arrow = () => {
-  const circleSize = 42; // Size of the larger circle
+  const circleSize = 38; // Size of the larger circle
   const text = "dream big studdy abroad ."; // Text to wrap around the circle
 
   const iconStyle = {
@@ -18,7 +18,7 @@ const Arrow = () => {
   };
 
   return (
-    <div className="bg-white absolute lg:flex md:flex hidden inset-0 mt-[635px]  items-center justify-center w-[200px] h-[200px] rounded-full mx-auto">
+    <div className="bg-white absolute lg:flex md:flex hidden inset-0 mt-[635px]  items-center justify-center w-[190px] h-[190px] rounded-full mx-auto">
       {/* Icon in the center */}
       <div className="absolute">
         <HiOutlineArrowDown style={iconStyle} className="text-center ml-1 mt-10  animate-bounce mx-auto mb-6" />
@@ -32,7 +32,7 @@ const Arrow = () => {
         return (
           <div
             key={index}
-            className="animate-spin rounded-full"
+            className="animate-spin rounded-full text-sm"
             style={{
               animationDuration: "10s",
             }}

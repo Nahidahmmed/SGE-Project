@@ -3,7 +3,7 @@ import { PiStarFourFill } from "react-icons/pi";
 
 export default function LatestNews() {
   return (
-    <div className="bg-[#4BA1FF] lg:py-[60px] md:py-[60px] py-[30px] lg:rounded-ss-[30px] md:rounded-ss-[30px] rounded-ss-[15px] lg:rounded-ee-[30px] md:rounded-ee-[30px] rounded-ee-[15px]">
+    <div className="bg-[#4BA1FF] lg:py-[60px] md:py-[60px] py-[30px] lg:rounded-ss-[30px] md:rounded-ss-[30px] rounded-ss-[15px] lg:rounded-ee-[30px] md:rounded-ee-[30px] rounded-ee-[15px] my-5">
       <div className="marquee-container overflow-hidden bg-white -rotate-2">
         <div className="marquee-content flex">
           {[...Array(5)].map((_, index) => (

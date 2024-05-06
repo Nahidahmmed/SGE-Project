@@ -15,7 +15,7 @@ export default function CountdownTimer() {
       onExit={() => setCounterOn(false)}
     >
       <div>
-        <p className="lg:text-7xl md:text-7xl text-5xl font-bold lg:text-right md:text-right text-center lg:mr-20 md:mr-20 mr-0 lg:pt-28 md:pt-28 lg:top-0 md:top-0 -top-96 relative  lg:mb-28 md:mb-28 mb-48 bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent">
+        <p className="lg:text-7xl md:text-7xl text-6xl font-bold lg:text-right md:text-right text-center lg:mr-20 md:mr-20 mr-0 lg:pt-28 md:pt-28 lg:top-0 md:top-0 -top-96 relative  lg:mb-28 md:mb-28 mb-48 bg-gradient-to-r from-[#88F3D0] to-[#88F3D0] bg-clip-text text-transparent">
           Our Core Strength
         </p>
         <h1>

@@ -13,7 +13,7 @@ export default function CoreStrength() {
           </div>
         </div>
       </div>
-      <img className="w-full lg:mt-[20%] md:mt-[20%] mt-[360%] lg:mb-0 md:mb-0 mb-28" src={bg_image} alt="" />
+      <img className="w-full lg:mt-[20%] md:mt-[20%] mt-[1280px] lg:mb-0 md:mb-0 mb-28" src={bg_image} alt="" />
     </div>
   );
 }
