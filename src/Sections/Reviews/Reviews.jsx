@@ -52,7 +52,6 @@ export const Reviews = () => {
                     : "h-[260px] md:h-[530px] lg:h-[530px] transition-all duration-300"
                 } min-w-[50%]  relative duration-200 bg-white rounded-3xl lg:block md:block hidden`}
               >
-                {/* <BiSolidQuoteAltLeft className="absolute text-9xl"/> */}
                 <img className="absolute top-8 left-8" src="https://i.ibb.co/kJyyzKR/Highlight.png" alt="" />
                 <img
                   src={slide.img}
@@ -67,6 +66,7 @@ export const Reviews = () => {
                 </div>
               </div>
             ))}
+            {/* for mobile */}
             {sliders.map((slide, inx) => (
               <div
                 key={inx}

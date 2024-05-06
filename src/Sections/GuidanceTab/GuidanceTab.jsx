@@ -34,7 +34,7 @@ export default function GuidanceTab() {
   return (
     <div className="bg-[#EFF6FF] rounded-3xl lg:pt-40 md:pt-40 pt-0">
       <div className="max-w-screen-xl mx-auto">
-        <div>
+        <div className="mx-5">
           {/* Tab buttons */}
           <div className="lg:flex md:flex hidden justify-between mb-4 bg-[#EEEEEE] w-[65%] text-2xl font-bold mx-auto rounded-full ">
             {tabsData.map((tab) => (

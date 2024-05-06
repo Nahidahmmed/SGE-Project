@@ -30,9 +30,9 @@ export default function Destination() {
             We’ll Plan the Rest
           </p>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-16">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-16 lg:px-0 md:px-0 px-7">
           {countrys.map((country, index) => (
-            <div key={index} className="mx-auto lg:mb-0 md:mb-0 mb-10">
+            <div key={index} className="mx-auto lg:mb-0 md:mb-0 mb-12">
               <FlagCard image={country.image} name={country.name} />
             </div>
           ))}
