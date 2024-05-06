@@ -41,10 +41,8 @@ export default function Header() {
             src={logo}
             alt="Shabuj Global Education"
           />
-
           <div>
             <img className="pt-2 lg:w-56 md:w-56 w-36" src={text} alt="" />
-
             <p className="lg:text-xs md:text-xs text-[8px] text-center text-[#333333] font-medium">
               Worldwide University Admission
             </p>

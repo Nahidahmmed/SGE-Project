@@ -16,7 +16,7 @@ export default function Footer() {
         />
       <div className="relative">
         
-        <div className="bg-[#081831] relative  flex justify-center lg:h-auto md:h-auto h-[2200px]">
+        <div className="bg-[#081831] relative  flex justify-center lg:h-auto md:h-auto h-[2120px]">
           <div className="absolute text-white flex flex-col lg:-top-5 md:-top-5 -top-0  max-w-screen-xl mx-auto w-full">
             <p className="lg:text-3xl md:text-3xl text-xl lg:font-bold md:font-bold font-light text-center">
               Our Students are Our Reference
